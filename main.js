@@ -54,9 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   resetButton.addEventListener('click', () => {
-      for (let i = 0; i < boxes.length; i++) {
-        boxes[i].innerHTML = '';
-      }   
+      boxes.forEach(box => {
+        box.textContent = '';        
+      });   
       turnIndex = 0;
       resetMatch();
       updateTurn();
