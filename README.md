@@ -28,7 +28,7 @@ This is a simple Tic-Tac-Toe game built using HTML, CSS (Tailwind CSS), and Java
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/tic-tac-toe.git
+   git clone https://github.com/abhivansh31/tic-tac-toe.git
    cd tic-tac-toe
 
 ### Deployment
