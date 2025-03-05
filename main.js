@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     boxes[i].addEventListener('click',() => {
       if (matchEnded === 1) {
         setTimeout(() => {
-          alert('Match Ended!!, Please click on Reset button to start a new match');
+          alert('Match Ended!! Please click on Reset button to start a new match');
         }, 2);
       }
       else if (boxes[i].textContent === '' && turnIndex === 0) {
@@ -69,13 +69,13 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
           alert('Player 1 wins!!');
         }, 2);
-        break;
+        return;
       } else if (playerPosition2.includes(winningCombo[i][0]) && playerPosition2.includes(winningCombo[i][1]) && playerPosition2.includes(winningCombo[i][2])) {
         matchEnded = 1;
         setTimeout(() => {
           alert('Player 2 wins!!');
         }, 2);
-        break;
+        return;
       } else if (playerPosition1.length + playerPosition2.length === 9 && matchEnded === 0) {
         setTimeout(() => {
           alert('Match Drawn!!');
