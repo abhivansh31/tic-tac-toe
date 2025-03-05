@@ -77,12 +77,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 2);
         return;
       } 
-      if (playerPosition1.length + playerPosition2.length === 9 && matchEnded === 0) {
-        setTimeout(() => {
-          alert('Match Drawn!!!');
-        }, 2);
-        matchEnded = 1;
-      }
+    }
+    if (playerPosition1.length + playerPosition2.length === 9 && matchEnded === 0) {
+      setTimeout(() => {
+        alert('Match Drawn!!!');
+      }, 2);
+      matchEnded = 1;
     }
   }
 
