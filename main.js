@@ -76,7 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
           alert('Player 2 wins!!');
         }, 2);
         return;
-      } else if (playerPosition1.length + playerPosition2.length === 9 && matchEnded === 0) {
+      } 
+      if (playerPosition1.length + playerPosition2.length === 9 && matchEnded === 0) {
         setTimeout(() => {
           alert('Match Drawn!!');
         }, 2);
